@@ -38,9 +38,9 @@
 
 /* Begin PBXFileReference section */
 		0457DA5AB897C9A435C8EC19 /* Pods-MNIncreaseTextView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MNIncreaseTextView_Tests.debug.xcconfig"; path = "Target Support Files/Pods-MNIncreaseTextView_Tests/Pods-MNIncreaseTextView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		35ED08D5DCC4410D94C93E62 /* MNIncreaseTextView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = MNIncreaseTextView.podspec; path = ../MNIncreaseTextView.podspec; sourceTree = "<group>"; };
+		35ED08D5DCC4410D94C93E62 /* MNIncreaseTextView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MNIncreaseTextView.podspec; path = ../MNIncreaseTextView.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		3E3F54E7594221FE82A5E577 /* Pods_MNIncreaseTextView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MNIncreaseTextView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5EFE14155090F1C89EF4BD43 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		5EFE14155090F1C89EF4BD43 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* MNIncreaseTextView_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MNIncreaseTextView_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -65,7 +65,7 @@
 		7BBBC64F0BF6DE9C07C1ABE1 /* Pods-MNIncreaseTextView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MNIncreaseTextView_Example.debug.xcconfig"; path = "Target Support Files/Pods-MNIncreaseTextView_Example/Pods-MNIncreaseTextView_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9CFCBFA894183339F31B72CC /* Pods-MNIncreaseTextView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MNIncreaseTextView_Tests.release.xcconfig"; path = "Target Support Files/Pods-MNIncreaseTextView_Tests/Pods-MNIncreaseTextView_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		A8AE3A383F22A10320E7D077 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		A8AE3A383F22A10320E7D077 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		C75366BBA5090F5D05CD6EE9 /* Pods_MNIncreaseTextView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MNIncreaseTextView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -193,7 +193,6 @@
 				0457DA5AB897C9A435C8EC19 /* Pods-MNIncreaseTextView_Tests.debug.xcconfig */,
 				9CFCBFA894183339F31B72CC /* Pods-MNIncreaseTextView_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -248,6 +247,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = tianmindianshang;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = QW8BL8CDBK;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -349,12 +351,14 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-MNIncreaseTextView_Example/Pods-MNIncreaseTextView_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/MNIncreaseTextView/MNIncreaseTextView.framework",
+				"${BUILT_PRODUCTS_DIR}/YYText/YYText.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MNIncreaseTextView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYText.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -498,6 +502,7 @@
 			baseConfigurationReference = 7BBBC64F0BF6DE9C07C1ABE1 /* Pods-MNIncreaseTextView_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = QW8BL8CDBK;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MNIncreaseTextView/MNIncreaseTextView-Prefix.pch";
 				INFOPLIST_FILE = "MNIncreaseTextView/MNIncreaseTextView-Info.plist";
@@ -513,6 +518,7 @@
 			baseConfigurationReference = 6DAD033082D1668843D006FB /* Pods-MNIncreaseTextView_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = QW8BL8CDBK;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MNIncreaseTextView/MNIncreaseTextView-Prefix.pch";
 				INFOPLIST_FILE = "MNIncreaseTextView/MNIncreaseTextView-Info.plist";

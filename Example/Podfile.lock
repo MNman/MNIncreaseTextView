@@ -1,0 +1,23 @@
+PODS:
+  - MNIncreaseTextView (1):
+    - YYText
+  - YYText (1.0.7)
+
+DEPENDENCIES:
+  - MNIncreaseTextView (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - YYText
+
+EXTERNAL SOURCES:
+  MNIncreaseTextView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  MNIncreaseTextView: c95e23bdf819863a7e1a3f0929cb7bf4f8c002d6
+  YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
+
+PODFILE CHECKSUM: ac92d4433c17beca0a111581527d790ba5247e7d
+
+COCOAPODS: 1.6.0.beta.2

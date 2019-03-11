@@ -1,0 +1,6 @@
+framework module MNIncreaseTextView {
+  umbrella header "MNIncreaseTextView-umbrella.h"
+
+  export *
+  module * { export * }
+}

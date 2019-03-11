@@ -1,0 +1,6 @@
+framework module Pods_MNIncreaseTextView_Tests {
+  umbrella header "Pods-MNIncreaseTextView_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
