@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MNIncreaseTextView'
-  s.version          = '2'
+  s.version          = '1'
   s.summary          = 'A short description of MNIncreaseTextView.'
 
 # This description is used to generate tags and improve search results.
@@ -32,9 +32,9 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'MNIncreaseTextView/Classes/**/*'
   
-  s.resource_bundles = {
-      'MNIncreaseTextView' => ['MNIncreaseTextView/Assets/*.png']
-  }
+  #s.resource_bundles = {
+  #    'MNIncreaseTextView' => ['MNIncreaseTextView/Assets/*.png']
+  #}
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   s.frameworks = 'UIKit'
