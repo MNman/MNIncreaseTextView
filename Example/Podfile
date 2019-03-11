@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'MNIncreaseTextView_Example' do
+  pod 'MNIncreaseTextView', :path => '../'
+
+  target 'MNIncreaseTextView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
