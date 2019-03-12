@@ -23,6 +23,12 @@
  *  文字最大高度
  */
 @property (nonatomic, assign) NSInteger maxTextH;
+/**
+ *  是否是外部直接初始化一个值由于直接赋值会导致判断长度的时候出现问题
+ *  由于YY里面的内部赋值的时候是先赋值后调用shouldChangeTextInRange判断
+ */
+@property (nonatomic, assign) BOOL isExternalVariable;
+
 @end
 @implementation UMHeightIncrease
 
@@ -101,6 +107,10 @@
         {
             return NO;
         }
+        if (self.isExternalVariable) {
+            self.isExternalVariable = NO;
+            return YES;
+        }
         NSUInteger newLength = [self.textView.text length] + [text length] - range.length;
         return newLength <= self.maxNumberOfChinaCharacter;
     }
@@ -154,6 +164,7 @@
     
 }
 - (void)setText:(NSString *)text{
+    self.isExternalVariable = YES;
     self.textView.text = text;
 }
 - (NSString *)text{
