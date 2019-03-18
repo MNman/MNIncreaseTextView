@@ -94,37 +94,33 @@
     return YES;
 }
 - (void)textViewDidBeginEditing:(YYTextView *)textView{
-//    MNPrintFileInfo;
 }
 - (void)textViewDidEndEditing:(YYTextView *)textView{
-//    MNPrintFileInfo;
 }
 - (BOOL)textView:(YYTextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text{
     if (self.maxNumberOfChinaCharacter <= 0) {
         return YES;
     }else{
+        if (self.isExternalVariable) {
+            self.isExternalVariable = NO;
+            if(text.length > self.maxNumberOfChinaCharacter){
+                self.text = [text substringToIndex:self.maxNumberOfChinaCharacter];
+                return NO;
+            }
+            return YES;
+        }
         if(range.length + range.location > self.textView.text.length)
         {
             return NO;
         }
-        if (self.isExternalVariable) {
-            self.isExternalVariable = NO;
-            return YES;
-        }
         NSUInteger newLength = [self.textView.text length] + [text length] - range.length;
         return newLength <= self.maxNumberOfChinaCharacter;
     }
-//    MNPrintFileInfo;
-//    NSLog(@"%@",text);
-    
 }
 - (void)textViewDidChange:(YYTextView *)textView{
-//    MNPrintFileInfo;
-//    NSLog(@"%@",textView.text);
     [self textDidChange];
 }
 - (void)textViewDidChangeSelection:(YYTextView *)textView{
-//    MNPrintFileInfo;
 }
 - (void)setPlaceholder:(NSString *)placeholder{
     _placeholder = placeholder;
