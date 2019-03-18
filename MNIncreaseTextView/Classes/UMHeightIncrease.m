@@ -52,6 +52,18 @@
     self.textView.enablesReturnKeyAutomatically = YES;
     self.textView.delegate = self;
     [self addSubview:self.textView];
+    
+    __weak typeof(self)weakSelf = self;
+    UIView *customInputAccessoryView = [[UIView alloc]initWithFrame:CGRectMake(0, 0,[UIScreen mainScreen].bounds.size.width, 40)];
+    UIButton *accesssoryButton = [[UIButton alloc]initWithFrame:CGRectMake([UIScreen mainScreen].bounds.size.width - 40 - 10, 0, 40, 40)];
+    [accesssoryButton setTitle:@"完成" forState:UIControlStateNormal];
+    [accesssoryButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [accesssoryButton addTarget:weakSelf.textView action:@selector(resignFirstResponder)forControlEvents:UIControlEventTouchUpInside];
+    [customInputAccessoryView addSubview:accesssoryButton];
+    
+    self.customInputAccessoryView.backgroundColor = [UIColor grayColor];
+    self.textView.inputAccessoryView = customInputAccessoryView;
+    self.customInputAccessoryView = customInputAccessoryView;
 }
 
 - (void)textDidChange{

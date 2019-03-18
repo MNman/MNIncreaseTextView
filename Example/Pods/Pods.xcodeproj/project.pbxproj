@@ -135,7 +135,7 @@
 		46F39D9B77312C33ACCC3EAD98E2FFE3 /* Pods-MNIncreaseTextView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MNIncreaseTextView_Example.release.xcconfig"; sourceTree = "<group>"; };
 		476AF81AE65769FE08E0CB53092511D3 /* YYText.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YYText.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		47B1F7C7143813032297A9AB28D6202E /* UMHeightIncrease.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UMHeightIncrease.h; path = MNIncreaseTextView/Classes/UMHeightIncrease.h; sourceTree = "<group>"; };
-		48B0C4A108F47A21DF9E53D846B825AC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		48B0C4A108F47A21DF9E53D846B825AC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		48EA6910769522AE5857209A135104C6 /* YYTextAsyncLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextAsyncLayer.h; path = YYText/Utility/YYTextAsyncLayer.h; sourceTree = "<group>"; };
 		4AC286862749EA9E2E931C08D0E61E40 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = DEVELOPER_DIR; };
 		4B7C15301EF9C1F9FB0A30B16FC979E4 /* YYTextAsyncLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextAsyncLayer.m; path = YYText/Utility/YYTextAsyncLayer.m; sourceTree = "<group>"; };
@@ -144,11 +144,11 @@
 		4FB4C10106FC3B6D37D325780C97C2D0 /* UIView+YYText.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+YYText.m"; path = "YYText/Utility/UIView+YYText.m"; sourceTree = "<group>"; };
 		524D11821815CFAA572AAD3B42442246 /* YYTextWeakProxy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextWeakProxy.m; path = YYText/Utility/YYTextWeakProxy.m; sourceTree = "<group>"; };
 		568E6FA6558ADDBD808F1CB1D083090C /* MNIncreaseTextView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MNIncreaseTextView-Info.plist"; sourceTree = "<group>"; };
-		5911C905E993BD5B65B93789923C6004 /* Pods_MNIncreaseTextView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MNIncreaseTextView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5911C905E993BD5B65B93789923C6004 /* Pods_MNIncreaseTextView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MNIncreaseTextView_Tests.framework; path = "Pods-MNIncreaseTextView_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D401F1ED661BA20848D19AE77AA9250 /* YYTextLine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextLine.m; path = YYText/Component/YYTextLine.m; sourceTree = "<group>"; };
 		5EAE05E4095F1DB432852B9A0A32F123 /* YYLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYLabel.h; path = YYText/YYLabel.h; sourceTree = "<group>"; };
 		6295B11D88B209B834EC64E52809F112 /* Pods-MNIncreaseTextView_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MNIncreaseTextView_Example-frameworks.sh"; sourceTree = "<group>"; };
-		67D7E6A9D813F4A465A5E134AB758E57 /* YYText.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YYText.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		67D7E6A9D813F4A465A5E134AB758E57 /* YYText.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = YYText.framework; path = YYText.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BFB920214A5AF690CD54E44A268EF23 /* YYTextArchiver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextArchiver.h; path = YYText/String/YYTextArchiver.h; sourceTree = "<group>"; };
 		6CD9ECA7737E1AD697137EA15DE1702E /* YYTextWeakProxy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextWeakProxy.h; path = YYText/Utility/YYTextWeakProxy.h; sourceTree = "<group>"; };
 		6EA79550340156ABCEF95AC400013306 /* Pods-MNIncreaseTextView_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MNIncreaseTextView_Example-Info.plist"; sourceTree = "<group>"; };
@@ -165,8 +165,8 @@
 		855CE355C11B62BCA1647622803F83D8 /* NSAttributedString+YYText.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSAttributedString+YYText.h"; path = "YYText/Utility/NSAttributedString+YYText.h"; sourceTree = "<group>"; };
 		86242048E9DC2E1764CFE08230D3FB94 /* YYTextKeyboardManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextKeyboardManager.m; path = YYText/Component/YYTextKeyboardManager.m; sourceTree = "<group>"; };
 		87103360424D177C9C242989879C29E8 /* YYTextTransaction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextTransaction.h; path = YYText/Utility/YYTextTransaction.h; sourceTree = "<group>"; };
-		872BCA29EE2A2E07C272BA6A4A050E92 /* Pods_MNIncreaseTextView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MNIncreaseTextView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8731E7FAFDDA43A58CE1159FEC021AA6 /* MNIncreaseTextView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = MNIncreaseTextView.podspec; sourceTree = "<group>"; tabWidth = 2; };
+		872BCA29EE2A2E07C272BA6A4A050E92 /* Pods_MNIncreaseTextView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MNIncreaseTextView_Example.framework; path = "Pods-MNIncreaseTextView_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8731E7FAFDDA43A58CE1159FEC021AA6 /* MNIncreaseTextView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = MNIncreaseTextView.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		8804B9E958D1B7F0F8F01BD0FDC364FC /* YYTextSelectionView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextSelectionView.m; path = YYText/Component/YYTextSelectionView.m; sourceTree = "<group>"; };
 		89F33316A0FDAFDB46DD5ECCCBC3384C /* YYTextMagnifier.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextMagnifier.m; path = YYText/Component/YYTextMagnifier.m; sourceTree = "<group>"; };
 		8FF775D428D84F80FA5AC64EECCFB817 /* YYTextRubyAnnotation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextRubyAnnotation.m; path = YYText/String/YYTextRubyAnnotation.m; sourceTree = "<group>"; };
@@ -179,7 +179,7 @@
 		A7CB53E28B214C08254209AC204F7D7E /* YYTextLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextLayout.h; path = YYText/Component/YYTextLayout.h; sourceTree = "<group>"; };
 		A9A6FAEE5338BD8AD6B2B7C037534EFB /* Pods-MNIncreaseTextView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MNIncreaseTextView_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		AF20B6C302DEC46E53430CAB1BAFC11C /* Pods-MNIncreaseTextView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MNIncreaseTextView_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		B36AB396275697EEE1A5B13BA8A38FE3 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B36AB396275697EEE1A5B13BA8A38FE3 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B4470963BFE88AD7EF946656F5407841 /* YYTextView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextView.m; path = YYText/YYTextView.m; sourceTree = "<group>"; };
 		B831A085837AC0C16AD53C417257935E /* UIView+YYText.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+YYText.h"; path = "YYText/Utility/UIView+YYText.h"; sourceTree = "<group>"; };
 		BEA2075C68DBF6AFBA6F81CDE63DF2EA /* YYTextRubyAnnotation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextRubyAnnotation.h; path = YYText/String/YYTextRubyAnnotation.h; sourceTree = "<group>"; };
@@ -189,7 +189,7 @@
 		C22CF392F1FBA4921A215BE2865CEDD0 /* YYTextUtilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextUtilities.m; path = YYText/Utility/YYTextUtilities.m; sourceTree = "<group>"; };
 		C4FE57C3D4A01267A015395E5591A3CD /* YYTextTransaction.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextTransaction.m; path = YYText/Utility/YYTextTransaction.m; sourceTree = "<group>"; };
 		C5899E1E6C6623BA37CFFE63A26E6824 /* Pods-MNIncreaseTextView_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MNIncreaseTextView_Tests-Info.plist"; sourceTree = "<group>"; };
-		C757E62B7284A998BFC8D41AC4707B7F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		C757E62B7284A998BFC8D41AC4707B7F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		C932E492AE6C984E3620D61446307DBD /* YYLabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYLabel.m; path = YYText/YYLabel.m; sourceTree = "<group>"; };
 		CCF54F7133E6D8C063FE10DC531A24BE /* UMHeightIncrease.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = UMHeightIncrease.m; path = MNIncreaseTextView/Classes/UMHeightIncrease.m; sourceTree = "<group>"; };
 		D34E61A1E78C93C29A5516D0B456F6FF /* Pods-MNIncreaseTextView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MNIncreaseTextView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -204,7 +204,7 @@
 		EE8F6D09A5FDCFBEB624190E7C573FA1 /* Pods-MNIncreaseTextView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MNIncreaseTextView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		F0E4616EB4B5487C340A847C57D41258 /* YYText.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYText.h; path = YYText/YYText.h; sourceTree = "<group>"; };
 		F2C380A7B5180CF46FF17BEB9B2C273C /* MNIncreaseTextView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MNIncreaseTextView-umbrella.h"; sourceTree = "<group>"; };
-		F70F67F864C69E6D8968367FCF509D47 /* MNIncreaseTextView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MNIncreaseTextView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F70F67F864C69E6D8968367FCF509D47 /* MNIncreaseTextView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MNIncreaseTextView.framework; path = MNIncreaseTextView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F73AA79231BCED3F0B050765E317893A /* YYTextContainerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextContainerView.h; path = YYText/Component/YYTextContainerView.h; sourceTree = "<group>"; };
 		F9FBEBEE347409375D937A20650055A3 /* Pods-MNIncreaseTextView_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MNIncreaseTextView_Tests-umbrella.h"; sourceTree = "<group>"; };
 		FE6EBB5201CA5871C131EC8BE708A2E2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
@@ -390,6 +390,7 @@
 				524D11821815CFAA572AAD3B42442246 /* YYTextWeakProxy.m */,
 				BF923B08EADE649181691BF02AC1B4FE /* Support Files */,
 			);
+			name = YYText;
 			path = YYText;
 			sourceTree = "<group>";
 		};
@@ -1028,7 +1029,8 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};

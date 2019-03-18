@@ -16,6 +16,12 @@ typedef void(^MN_textHeightChangedBlock)(NSString *text,CGFloat textHeight);
 @interface UMHeightIncrease : UIView
 @property (nonatomic, strong) YYTextView * textView;
 /**
+ *  完成按钮占位视图
+ *
+ */
+@property (nonatomic, weak) UIView *customInputAccessoryView;
+
+/**
  *  占位文字
  */
 @property (nonatomic, strong) NSString *placeholder;
