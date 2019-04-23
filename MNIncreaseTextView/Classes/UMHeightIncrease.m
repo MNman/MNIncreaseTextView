@@ -37,6 +37,7 @@
     if (self = [super initWithFrame:frame]) {
         
         [self initSubViews:frame];
+        self.maxNumberOfHeight = frame.size.height;
     }
     return self;
 }
@@ -69,7 +70,7 @@
 - (void)textDidChange{
     
     NSInteger height = ceilf(self.textView.textLayout.textBoundingSize.height);
-    if(self.maxTextH == 0 || self.maxNumberOfLines == 0){
+    if(self.maxTextH == 0 || self.maxNumberOfHeight == 0){
         return;
     }
     if (_textH != height) { // 高度不一样，就改变了高度
@@ -146,10 +147,9 @@
     _placeholderFontValue = placeholderFontValue;
     self.textView.placeholderFont = placeholderFontValue;
 }
-
-- (void)setMaxNumberOfLines:(NSUInteger)maxNumberOfLines{
-    _maxNumberOfLines = maxNumberOfLines;
-    _maxTextH = ceil(self.textView.font.lineHeight * maxNumberOfLines + self.textView.textContainerInset.top + self.textView.textContainerInset.bottom);
+- (void)setMaxNumberOfHeight:(NSUInteger)maxNumberOfHeight{
+    _maxNumberOfHeight = maxNumberOfHeight;
+    _maxTextH = maxNumberOfHeight + self.textView.textContainerInset.top + self.textView.textContainerInset.bottom;
 }
 - (void)setContentFontValue:(UIFont *)contentFontValue{
     _contentFontValue = contentFontValue;

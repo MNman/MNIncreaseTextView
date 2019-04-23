@@ -48,9 +48,9 @@ typedef void(^MN_textHeightChangedBlock)(NSString *text,CGFloat textHeight);
 @property (nonatomic,assign) UIEdgeInsets contentInsetValue;
 
 /**
- *  textView最大行数 会计算最大高度
+ *  textView最大高度
  */
-@property (nonatomic, assign) NSUInteger maxNumberOfLines;
+@property (nonatomic, assign) NSUInteger maxNumberOfHeight;
 /**
  *  textView最小高度
  */
