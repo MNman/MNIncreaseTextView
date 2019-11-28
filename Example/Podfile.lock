@@ -1,5 +1,5 @@
 PODS:
-  - MNIncreaseTextView (0.0.1):
+  - MNIncreaseTextView (0.0.3):
     - YYText
   - YYText (1.0.7)
 
@@ -15,7 +15,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  MNIncreaseTextView: aefeb91aaea1f0ed22a5a744d0684b2ba77f056a
+  MNIncreaseTextView: e65849aed1c4a07a9e7a6fd4c5fc268957ee5575
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
 PODFILE CHECKSUM: e192b6cfbca554ff81b92216dc7ef8ad95b9be79

@@ -45,8 +45,6 @@
 - (instancetype)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
         [self initSubViews:frame];
-        self.maxHeight = frame.size.height;
-        self.minHeight = frame.size.height;;
     }
     return self;
 }
@@ -68,7 +66,6 @@
     self.textView.enablesReturnKeyAutomatically = YES;
     self.textView.delegate = self;
     [self addSubview:self.textView];
-    [self addCustomInputAccessoryView];
 }
 - (void)addCustomInputAccessoryView {
     __weak typeof(self)weakSelf = self;

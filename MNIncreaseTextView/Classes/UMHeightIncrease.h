@@ -20,7 +20,7 @@ typedef void(^UMHeightIncreaseTextNumberChange)(NSUInteger textLength);
 @property (nonatomic, strong) YYTextView * textView;
 
 /**
-*  是否移除自定义辅助视图
+*  是否移除自定义辅助视图（默认未添加）
 */
 
 @property (nonatomic, assign) BOOL isHiddenCustomInputAccessoryView;
@@ -61,7 +61,7 @@ typedef void(^UMHeightIncreaseTextNumberChange)(NSUInteger textLength);
 @property (nonatomic,assign) UIEdgeInsets contentInsetValue;
 
 /**
- *  textView最大高度
+ *  textView最大高度 一定要在初始化frame后设置否则会被重置
  */
 @property (nonatomic, assign) NSUInteger maxHeight;
 /**
