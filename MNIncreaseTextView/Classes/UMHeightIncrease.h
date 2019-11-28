@@ -20,7 +20,7 @@ typedef void(^UMHeightIncreaseTextNumberChange)(NSUInteger textLength);
 @property (nonatomic, strong) YYTextView * textView;
 
 /**
-*  是否移除自定义辅助视图（默认未添加）
+*  是否移除自定义辅助视图
 */
 
 @property (nonatomic, assign) BOOL isHiddenCustomInputAccessoryView;

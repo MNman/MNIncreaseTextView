@@ -44,7 +44,7 @@
 
 - (instancetype)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
-        [self initSubViews:frame];
+        [self initSubViews];
     }
     return self;
 }
@@ -59,23 +59,24 @@
 - (void)layoutSubviews {
     [super layoutSubviews];
 }
-- (void)initSubViews:(CGRect)frame {
+- (void)initSubViews {
     self.textView.scrollEnabled = NO;
     self.textView.scrollsToTop = NO;
     self.textView.showsHorizontalScrollIndicator = NO;
     self.textView.enablesReturnKeyAutomatically = YES;
     self.textView.delegate = self;
     [self addSubview:self.textView];
+    [self addCustomInputAccessoryView];
 }
 - (void)addCustomInputAccessoryView {
     __weak typeof(self)weakSelf = self;
    UIView *customInputAccessoryView = [[UIView alloc]initWithFrame:CGRectMake(0, 0,[UIScreen mainScreen].bounds.size.width, 40)];
    UIButton *accesssoryButton = [[UIButton alloc]initWithFrame:CGRectMake([UIScreen mainScreen].bounds.size.width - 40 - 10, 0, 40, 40)];
    [accesssoryButton setTitle:@"完成" forState:UIControlStateNormal];
-    [accesssoryButton setTitleColor:self.doneTextColor?self.doneTextColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [accesssoryButton setTitleColor:self.doneTextColor?self.doneTextColor:[UIColor systemGrayColor] forState:UIControlStateNormal];
    [accesssoryButton addTarget:weakSelf.textView action:@selector(resignFirstResponder)forControlEvents:UIControlEventTouchUpInside];
    [customInputAccessoryView addSubview:accesssoryButton];
-   customInputAccessoryView.backgroundColor = self.doneBgColor?self.doneBgColor:[UIColor grayColor];
+   customInputAccessoryView.backgroundColor = self.doneBgColor?self.doneBgColor:[UIColor systemBlueColor];
     
    self.textView.inputAccessoryView = customInputAccessoryView;
    self.customInputAccessoryView = customInputAccessoryView;
@@ -210,8 +211,10 @@
 
 - (void)setIsHiddenCustomInputAccessoryView:(BOOL)isHiddenCustomInputAccessoryView {
     _isHiddenCustomInputAccessoryView = isHiddenCustomInputAccessoryView;
-    if (_isHiddenCustomInputAccessoryView) {
-        self.textView.inputAccessoryView = nil;
+        if (_isHiddenCustomInputAccessoryView) {
+        if (self.customInputAccessoryView) {
+            self.textView.inputAccessoryView = nil;
+        }
     } else {
         [self addCustomInputAccessoryView];
     }
