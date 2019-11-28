@@ -1,9 +1,9 @@
 {
   "name": "MNIncreaseTextView",
-  "version": "5",
+  "version": "0.0.1",
   "summary": "A short description of MNIncreaseTextView.",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://coding.net/u/tianmindianshang/p/MNIncreaseTextView/git",
+  "homepage": "https://github.com/MNman/MNIncreaseTextView",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,13 +12,14 @@
     "tianmindianshang": "724896800@qq.com"
   },
   "source": {
-    "git": "https://git.coding.net/tianmindianshang/MNIncreaseTextView.git",
-    "tag": "5"
+    "git": "https://github.com/MNman/MNIncreaseTextView.git",
+    "tag": "0.0.1"
   },
   "platforms": {
     "ios": "8.0"
   },
   "source_files": "MNIncreaseTextView/Classes/**/*",
+  "public_header_files": "MNIncreaseTextView/Classes/**/*.h",
   "frameworks": "UIKit",
   "dependencies": {
     "YYText": [
