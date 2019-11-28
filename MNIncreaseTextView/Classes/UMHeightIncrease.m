@@ -84,6 +84,9 @@
 }
 
 - (void)textDidChange {
+    
+    self.crealTimeChangedText = self.textView.text;
+    
     if (self.viewTextChangeBlock) {
         self.viewTextChangeBlock(self.textView.text);
     }

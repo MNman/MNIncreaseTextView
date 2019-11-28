@@ -92,7 +92,16 @@ typedef void(^UMHeightIncreaseTextNumberChange)(NSUInteger textLength);
 
 @property (nonatomic, assign) NSUInteger borderWidth;
 
-@property (nonatomic, strong) NSString * text;
+/*
+* 手动设置textView的文本
+*/
+@property (nonatomic, strong) NSString *text;
+
+/*
+ * 使用kvo观察这个属性来实时获取text
+ */
+@property (nonatomic, copy ,readonly)  NSString *crealTimeChangedText;
+
 
 @end
 
