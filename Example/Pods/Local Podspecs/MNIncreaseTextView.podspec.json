@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "summary": "A short description of MNIncreaseTextView.",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/MNman/MNIncreaseTextView",
+  "homepage": "https://git.coding.net/tianmindianshang/MNIncreaseTextView",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,7 +12,7 @@
     "tianmindianshang": "724896800@qq.com"
   },
   "source": {
-    "git": "https://github.com/MNman/MNIncreaseTextView.git",
+    "git": "https://git.coding.net/tianmindianshang/MNIncreaseTextView.git",
     "tag": "0.0.1"
   },
   "platforms": {
