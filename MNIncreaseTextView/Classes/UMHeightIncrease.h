@@ -11,15 +11,28 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-typedef void(^MN_textHeightChangedBlock)(NSString *text,CGFloat textHeight);
+typedef void(^UMHeightIncreaseHeightChange)(CGFloat newHeight);
+typedef void(^UMHeightIncreaseTextChange)(NSString * text);
+typedef void(^UMHeightIncreaseTextNumberChange)(NSUInteger textLength);
 
 @interface UMHeightIncrease : UIView
+
 @property (nonatomic, strong) YYTextView * textView;
+
 /**
- *  完成按钮占位视图
- *
- */
-@property (nonatomic, weak) UIView *customInputAccessoryView;
+*  是否移除自定义辅助视图
+*/
+
+@property (nonatomic, assign) BOOL isHiddenCustomInputAccessoryView;
+/**
+*  自定义辅助视图背景色 （前提isHiddenCustomInputAccessoryView = NO）
+*/
+
+@property (nonatomic, strong) UIColor *doneBgColor;
+/**
+*  自定义辅助视图按钮的颜色 （前提isHiddenCustomInputAccessoryView = NO）
+*/
+@property (nonatomic, strong) UIColor *doneTextColor;
 
 /**
  *  占位文字
@@ -50,31 +63,36 @@ typedef void(^MN_textHeightChangedBlock)(NSString *text,CGFloat textHeight);
 /**
  *  textView最大高度
  */
-@property (nonatomic, assign) NSUInteger maxNumberOfHeight;
-/**
- *  textView最小高度
- */
-@property (nonatomic, assign) NSUInteger minNumberOfHeight;
+@property (nonatomic, assign) NSUInteger maxHeight;
 /**
  *  textView字数限制 表情占2个字数（黏贴超过长度字符会失败）
  *
  **/
-@property (nonatomic, assign) NSUInteger maxNumberOfChinaCharacter;
+@property (nonatomic, assign) NSUInteger maxNumberCharacter;
 
 /**
  *  文字高度改变block → 文字高度改变会自动调用
- *  block参数(text) → 文字内容
- *  block参数(textHeight) → 文字高度
  */
-@property (nonatomic, copy) MN_textHeightChangedBlock textChangedBlock;
+@property (nonatomic, copy) UMHeightIncreaseHeightChange viewHeightChangeBlock;
+/**
+*  文本改变
+*/
+@property (nonatomic, copy) UMHeightIncreaseTextChange viewTextChangeBlock;
+/**
+*  当前输入字符数
+*/
+@property (nonatomic, copy) UMHeightIncreaseTextNumberChange viewTextLengthChangeBlock;
+
 /**
  *  设置圆角
  */
 @property (nonatomic, assign) NSUInteger cornerRadius;
 
-@property (nonatomic, strong) NSString * text;
+@property (nonatomic, strong) UIColor *cornerColor;
 
-- (void)textValueDidChanged:(MN_textHeightChangedBlock)block;
+@property (nonatomic, assign) NSUInteger borderWidth;
+
+@property (nonatomic, strong) NSString * text;
 
 @end
 
