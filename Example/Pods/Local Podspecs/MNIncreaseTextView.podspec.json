@@ -1,6 +1,6 @@
 {
   "name": "MNIncreaseTextView",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "summary": "A short description of MNIncreaseTextView.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://git.coding.net/tianmindianshang/MNIncreaseTextView",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://git.coding.net/tianmindianshang/MNIncreaseTextView.git",
-    "tag": "0.0.3"
+    "tag": "0.0.4"
   },
   "platforms": {
     "ios": "8.0"
