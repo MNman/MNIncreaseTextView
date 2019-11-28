@@ -100,7 +100,7 @@ typedef void(^UMHeightIncreaseTextNumberChange)(NSUInteger textLength);
 /*
  * 使用kvo观察这个属性来实时获取text
  */
-@property (nonatomic, copy ,readonly)  NSString *crealTimeChangedText;
+@property (nonatomic, copy ,readonly)  NSString *realTimeChangedText;
 
 
 @end
