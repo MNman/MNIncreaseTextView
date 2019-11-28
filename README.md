@@ -27,3 +27,6 @@ tianmindianshang, 724896800@qq.com
 ## License
 
 MNIncreaseTextView is available under the MIT license. See the LICENSE file for more info.
+
+
+YYText基础上实现自增的高度、固定高度、最小高度、输入字符数、最大字符数、done按钮 
