@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://coding.net/u/tianmindianshang/p/MNIncreaseTextView/git'
+  s.homepage         = 'https://github.com/MNman/MNIncreaseTextView'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'tianmindianshang' => '724896800@qq.com' }
-  s.source           = { :git => 'https://git.coding.net/tianmindianshang/MNIncreaseTextView.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/MNman/MNIncreaseTextView.git', :tag => s.version.to_s }
   
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
