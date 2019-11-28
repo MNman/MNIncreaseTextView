@@ -10,8 +10,6 @@
 #import "YYTextView.h"
 @interface UMHeightIncrease()<YYTextViewDelegate>
 
-@property (nonatomic, copy ,readwrite)  NSString *realTimeChangedText;
-
 @property (nonatomic, weak) UIButton *inputAccessoryViewButton;
 /**
  *  完成按钮占位视图

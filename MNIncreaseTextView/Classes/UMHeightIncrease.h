@@ -98,9 +98,9 @@ typedef void(^UMHeightIncreaseTextNumberChange)(NSUInteger textLength);
 @property (nonatomic, strong) NSString *text;
 
 /*
- * 使用kvo观察这个属性来实时获取text
+ * 使用kvo观察这个属性来实时获取text readonly
  */
-@property (nonatomic, copy ,readonly)  NSString *realTimeChangedText;
+@property (nonatomic, copy)  NSString *realTimeChangedText;
 
 
 @end
